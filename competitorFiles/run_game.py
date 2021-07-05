@@ -5,6 +5,8 @@ import importlib
 botsToRun = {
     "examples.randomBidder":4,
     "examples.randomAccuser":1,
+    "meanminus10":1,
+    "3stddev":1,
     "NPC": 4
 }
 
@@ -17,4 +19,6 @@ for b in botsToRun:
         else:
             botClass = importlib.import_module(b)
             engine.registerBot(botClass.CompetitorInstance(),team=b)
+
+
 engine.runGame()
