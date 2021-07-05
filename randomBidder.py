@@ -20,4 +20,5 @@ class CompetitorInstance():
         pass
 
     def onAuctionEnd(self):
+        cum = 1
         pass
